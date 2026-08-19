@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartops_teams_connector"
+version = "0.1.0"
+description = "Minimal Frappe Helpdesk connector for the SmartOps Teams bridge"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["smartops_teams_connector*"]

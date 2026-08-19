@@ -1,0 +1,42 @@
+{
+ "doctype": "DocType",
+ "name": "SmartOps Teams Connector Settings",
+ "module": "SmartOps Teams Connector",
+ "issingle": 1,
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": ["enabled", "bridge_url", "bridge_token"],
+ "fields": [
+  {
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled",
+   "default": "0"
+  },
+  {
+   "fieldname": "bridge_url",
+   "fieldtype": "Data",
+   "label": "Bridge URL",
+   "options": "URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bridge_token",
+   "fieldtype": "Password",
+   "label": "Bridge Token",
+   "reqd": 1
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,1 @@
+recursive-include smartops_teams_connector *.json *.py *.txt
